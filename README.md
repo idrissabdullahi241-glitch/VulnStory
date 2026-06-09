@@ -1,24 +1,24 @@
-# VulnStory
+ VulnStory
 
-> **"Learn cybersecurity by living the attack."**
+> "Learn cybersecurity by living the attack."
 
-VulnStory is an AI-powered interactive cybersecurity training application that transforms OWASP Top 10 vulnerabilities into immersive, story-driven scenarios. Users step into the role of attacker or defender inside realistic company environments — fintech platforms, hospital systems, e-commerce backends — and make real incident response decisions with immediate AI-generated feedback.
+VulnStory is an AI-powered interactive cybersecurity training application that transforms OWASP Top 10 vulnerabilities into immersive, story-driven scenarios. Users step into the role of attacker or defender inside realistic company environments precisely fintech platforms, hospital systems, e-commerce backends and make real incident response decisions with immediate AI-generated feedback.
 
 Built on the Anthropic Claude API, every scenario is dynamically generated, ensuring no two sessions are identical.
 
 ---
 
-## Features
+ Features
 
-- **Story mode** — AI-generated vulnerability scenarios with role-play (attacker or defender), difficulty levels (beginner / intermediate / advanced), and decision-based outcomes
-- **Quiz mode** — Situational multiple-choice questions per OWASP Top 10 vulnerability with AI-generated explanations
-- **OWASP reference** — Built-in cheat sheet for all OWASP Top 10:2021 entries with severity ratings
-- **Score tracker** — Tracks correct decisions and accuracy across scenarios
-- **10 vulnerabilities supported** — SQL Injection, XSS, Broken Auth, IDOR, SSRF, XXE, CSRF, RCE, Open Redirect, JWT Misconfiguration
+- Story mode — AI-generated vulnerability scenarios with role-play (attacker or defender), difficulty levels (beginner / intermediate / advanced), and decision-based outcomes
+- Quiz mode — Situational multiple-choice questions per OWASP Top 10 vulnerability with AI-generated explanations
+- OWASP reference — Built-in cheat sheet for all OWASP Top 10:2021 entries with severity ratings
+- Score tracker — Tracks correct decisions and accuracy across scenarios
+- 10 vulnerabilities supported — SQL Injection, XSS, Broken Auth, IDOR, SSRF, XXE, CSRF, RCE, Open Redirect, JWT Misconfiguration
 
 ---
 
-## Project Structure
+ Project Structure
 
 ```
 vulnstory/
@@ -46,7 +46,7 @@ vulnstory/
 
 ---
 
-## Prerequisites
+ Prerequisites
 
 Before running VulnStory, make sure you have the following installed:
 
@@ -78,11 +78,10 @@ You do **not** need Node.js, Python, or any backend server. VulnStory runs entir
 Open your terminal (Command Prompt on Windows, Terminal on Mac/Linux) and run:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vulnstory.git
+git clone https://github.com/idrissabdullahi241-glitch/vulnstory.git
 cd vulnstory
 ```
 
-Replace `YOUR_USERNAME` with your actual GitHub username.
 
 ### Step 2 — Set up your environment file
 
@@ -132,47 +131,7 @@ python -m http.server 8000
 # http://localhost:8000
 ```
 
-### Step 4 — Add your API key to the app
 
-When the app opens, look for the API key input at the top of the page (or follow the in-app instructions to paste your key). The key is stored only in your browser session — it is never sent anywhere except directly to Anthropic's API.
-
-### Step 5 — Use the app
-
-1. Click any vulnerability tag (e.g., **SQL Injection**)
-2. Select your role: **Play as attacker** or **Play as defender**
-3. Select difficulty: **Beginner**, **Intermediate**, or **Advanced**
-4. Click **Generate scenario**
-5. Read the scenario, study the clue, make your decision
-6. See the outcome and the defense technique explained
-
----
-
-## Deploying to GitHub Pages (for judges to access live)
-
-### Step 1 — Push your code to GitHub
-
-```bash
-git add .
-git commit -m "Initial VulnStory submission"
-git push origin main
-```
-
-### Step 2 — Enable GitHub Pages
-
-1. Go to your repository on GitHub
-2. Click **Settings** → **Pages** (in the left sidebar)
-3. Under **Source**, select **Deploy from a branch**
-4. Select **main** branch and **/ (root)** folder
-5. Click **Save**
-
-Your app will be live at:
-```
-https://YOUR_USERNAME.github.io/vulnstory/
-```
-
-It may take 1–2 minutes to deploy. Share this link with judges.
-
----
 
 ## How the Anthropic API Integration Works
 
